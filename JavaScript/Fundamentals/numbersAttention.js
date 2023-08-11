@@ -4,3 +4,4 @@ console.log('aa' / 2); // NaN
 console.log('Show' * 2); // NaN
 console.log(0.1 + 0.7); // 0.79999999999: vagueness
 
+console.log('3' + 2); // Concatenate
