@@ -1,0 +1,1 @@
+const result = nota => nota >= 7 ? 'Aproved' : 'Failed';
