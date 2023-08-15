@@ -1,5 +1,5 @@
 function Person(name) {
-    this.name = name;
+    this.name = name; // If you don't put this, you can't access 'name' outside
 
     this.say = function() {
         console.log(`My name is ${this.name}`);

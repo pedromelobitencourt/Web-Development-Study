@@ -11,7 +11,7 @@ class Person {
 const p1 = new Person('Pedro');
 p1.say(); // My name is Pedro
 
-const createPerson = name => {
+const createPerson = name => { // This is not necessary
     return {
         say: () => console.log(`My name is ${name}`)
     }
