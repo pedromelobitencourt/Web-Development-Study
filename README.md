@@ -31,6 +31,6 @@ This repository is licensed under the [MIT License](LICENSE).
 
 ### Acknowledgments
 
-This repository was created and is maintained by [Your Name](https://github.com/your-username). Special appreciation to the open-source community and various online resources for providing valuable learning materials.
+This repository was created and is maintained by Pedro Vitor Melo Bitencourt (https://github.com/pedromelobitencourt). Special appreciation to the open-source community and various online resources for providing valuable learning materials.
 
 Happy coding!
