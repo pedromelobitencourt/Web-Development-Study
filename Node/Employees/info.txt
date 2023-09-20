@@ -1,0 +1,10 @@
+To create a 'package.json' file, you should type in the terminal: npm init and answer its questions
+
+The 'package.json' file is a project descriptor, there is a description of all dependencies of your project
+
+'^' in the version of a dependency: It allows that the minor part of the version can be updated (the middle part)
+'~' in the version of a dependency: It allows that the fix part of the version can be updated (the last part)
+If there is nothing, the version can't be changed
+
+
+The 'package-lock.json' file should go to your repository
