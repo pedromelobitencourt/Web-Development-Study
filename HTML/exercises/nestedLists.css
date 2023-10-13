@@ -1,0 +1,57 @@
+.tree * {
+    list-style-type: none;
+}
+
+.tree li a {
+    color: #222;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.tree ul {
+    padding-left: 25px;
+}
+
+ul.tree, .tree li {
+    padding-left: 0px;
+    padding-top: 5px;
+}
+
+ul.tree, ul.tree ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+ul.tree ul {
+    margin-left: 10px;
+}
+
+ul.tree li {
+    margin: 0;
+    margin: 0 9px;
+    padding: 0 7px;
+    border-left:1px solid rgb(100,100,100);
+
+}
+
+ul.tree li:last-child {
+    border-left:none;
+}
+
+ul.tree li:before {
+    position:relative;
+    top:-0.3em;
+    height:1em;
+    width:12px;
+    color:white;
+    border-bottom:1px solid rgb(100,100,100);
+    content:"";
+    display:inline-block;
+    left:-7px;
+}
+
+ul.tree li:last-child:before {
+    border-left:1px solid rgb(100,100,100);   
+}

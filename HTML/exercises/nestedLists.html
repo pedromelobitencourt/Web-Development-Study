@@ -1,0 +1,54 @@
+<h1>Nested Lists</h1>
+
+<h2>Project</h2>
+<ul class="tree">
+    <li>
+    <span wm-folder>backend</span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>
+                <ul>
+                    <li>product.js</li>
+                    <li>client.js</li>
+                    <li>sales.js</li>
+                </ul>
+            </li>
+
+            <li>
+                <span wm-folder>config</span>
+                <ul>
+                    <li>bank.js</li>
+                    <li>routes.js</li>
+                    <li>services.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <span wm-folder>frontend</span>
+        <ul>
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>app.js</li>
+                    <li>app.css</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling;
+            const display = ul.style.display;
+
+            ul.style.display = display === 'none' ? 'block' : 'none';
+        }
+    })
+</script>
