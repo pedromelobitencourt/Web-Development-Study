@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML exercises</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Exercises</h1>
+    </header>
+
+    <nav>
+        <a href wm-nav="exercises/test.html" >00 - Test</a> |
+        <a href wm-nav="exercises/text1.html" >01 - Text 1</a> |
+        <a href wm-nav="exercises/text2.html" >02 - Text 2</a>
+    </nav>
+
+    <section id="content"></section>
+
+    <footer>Modern WEB Course</footer>
+
+    <script>
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const content = document.getElementById('content');
+
+            link.onclick = function(e) {
+                e.preventDefault();
+                
+                fetch(link.getAttribute('wm-nav')) // Ajax req on the link
+                    .then(resp => resp.text())
+                    .then(html => content.innerHTML = html);
+            }
+        })
+    </script>
+</body>
+</html>
