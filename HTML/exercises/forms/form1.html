@@ -1,6 +1,7 @@
 <h1>Form1</h1>
 
-<form action="http://localhost:3003/users" method="POST">
+<form method="POST">
+    <input type="hidden" name="id" value="3">
     <input type="text" name="namee">
     <input type="password" name="password" id="">
     <textarea name="bio" cols="30" rows="10"></textarea>
@@ -18,6 +19,7 @@
 
     <!-- unique selection -->
     <select name="state" id="">
+        <option value="empty">Select</option>
         <option value="AC">Acre</option>
         <option value="BA">Bahia</option>
         <option value="MG">Minas Gerais</option>
@@ -36,7 +38,8 @@
         <option value="c">C</option>
     </select>
 
-    <button>Insert</button>
+    <button formaction="http://localhost:3003/users" formmethod="post">Insert</button>
+    <button formaction="http://localhost:3003/users/3">Update</button>
 </form>
 
 <style>
