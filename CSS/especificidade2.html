@@ -5,7 +5,38 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://specificity.keegan.st/ */
+        /* https://specificity.keegan.st/: specificity calculator */
+        /* 
+            Inline
+            ID
+            Classes, pseudo-classes, atributos
+            Elements
+        */
+
+        body {
+            font-size: 40px;
+        }
+        
+        div {
+            background-color: #00B;
+            color: white;
+        }
+        
+        div[wm-cor] {
+            background-color: darkorange;
+        }
+        
+        div:hover {
+            background-color: purple;
+        }
+
+        div.estilo {
+            background-color: green;
+        }
+
+        #unico1, #unico2 {
+            background-color: black;
+        }
     </style>
 </head>
 
